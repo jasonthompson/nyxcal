@@ -1,0 +1,8 @@
+<table class="day-view">
+  <% for event in @events %>
+    <tr>
+      <td><%= event.time %></td>
+      <td><%= event.description %></td>
+    </tr>
+  <% end %>
+</table>
