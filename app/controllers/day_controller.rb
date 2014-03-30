@@ -7,6 +7,6 @@ class DayController < ApplicationController
     event2 = OpenStruct.new
     event2.time = "12:00"
     event2.description = "lunch with Keop"
-    @events = [event1, event2]
+    @events = [event1, event2] 
   end
 end
