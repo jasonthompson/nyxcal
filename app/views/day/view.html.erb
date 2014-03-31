@@ -1,9 +1,9 @@
 <table class="day-view">
-  <h1></h1>
-  <% for event in @events %>
+  <h1><%= @day.title %></h1>
+  <% for event in @day.events %>
     <tr>
-      <td><%= event.time %></td>
-      <td><%= event.description %></td>
+      <td><%= event.date_start %></td>
+      <td><%= event.summary %></td>
     </tr>
     <% end %>
-</table>
+</tabl
