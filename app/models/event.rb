@@ -1,5 +1,6 @@
 class Event < ActiveRecord::Base
-  def self.on_day(year, month, day)
-    self.where('date_start' == Date.new(year.to_i, month.to_i, day.to_i))
+  def self.on_day(args={})
+    year, month, day = args[:year].to_i, args[:month].to_i, args[:day].to_i
+    self.where('date_start' == Date.new(year, month, day))
   end
 end
